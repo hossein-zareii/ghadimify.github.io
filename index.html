@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>ghadimify</title>
+</head>
+<body class="bg-black">
+
+
+<!-- left floated window -->
+<section class="container-fluid">
+    <div class="row">
+
+
+          <!-- left section(sidebar) -->
+        <div class="col-4 d-none d-md-block akbar bg-black overflow-y-hidden" style="height: 100vh; width: 340px;">
+
+
+            <!-- TOP -->
+            <div class="ps-3 d-flex flex-column justify-content-around mt-3 bg-left rounded" style="height: 150px;">
+              <a class="fw-bold d-flex align-items-center text-decoration-none text-white"  href="">
+                <i  class="bi fs-4 text-white bi-spotify"></i>
+                Spotify
+              </a>
+              <a class="fw-bold d-flex align-items-center gap-3 text-decoration-none text-white"  href="">
+                <i class="bi fs-4 text-white  bi-house-door-fill"></i>
+                Home
+              </a>
+              <a class="fw-bold d-flex align-items-center gap-3 text-decoration-none text-white"  href="">
+                <i  class="bi fs-4 text-white bi-search"></i>
+                Search
+              </a>
+            </div>
+
+
+            <!-- MIDDLE -->
+            <section class="bg-left rounded" style="height: 65vh;">
+
+
+                <div class="d-flex mt-2 align-items-center justify-content-between ps-3 mt-2">
+                    <a class="fw-bold mt-2 fs-5 d-flex align-items-center gap-3 text-decoration-none text-white"  href="">
+                      <i class="bi bi-collection"></i>
+                      Your Library
+                    </a>
+                    <a class="text-white pe-3" href="">
+                      <i class="bi bi-plus-lg"></i>
+                    </a>
+                </div>
+
+
+                <section class="scroll overflow-y-scroll">
+
+
+                  <div class="m-2 bg-dark text-white rounded ov my-3 d-flex gap-3 flex-column justify-content-center ">
+                    <h6 class="ps-3 mt-4">Create your first playlist</h6>
+                    <h6 class="ps-3">it's easy. we'll help you!</h6>
+                    <button class="m-2 rounded-5 w-50 btn-light">Create Playlist</button>
+                  </div>
+                  <div class="m-2 bg-dark text-white rounded   my-3 d-flex gap-3 flex-column justify-content-center ">
+                    <h6 class="ps-3 mt-4">Lets find some padcasts to fallow</h6>
+                    <h6 class="ps-3">We'll keep updated on new episodes</h6>
+                    <button class="m-2 rounded-5 w-50 btn-light">Browse podcasts</button>
+                  </div>
+
+
+                </section>
+
+
+                  <!-- button of side bar -->
+                  <div class="d-flex flex-column m-4 ali">
+                    <div class="justify-content-around mt-3 d-flex">
+                        <a href="">legal</a>
+                        <a href="">Safty and Privecy Center</a>
+                        <a href="">Privecy and Policy</a>
+                    </div>
+                    <div class="justify-content-around mt-3 d-flex">
+                        <a href="">Cookie Settings</a>
+                        <a href="">About Ads</a>
+                        <a href="">Accesability</a>
+                    </div>
+                    <div class="ms-3 mt-3">
+                      <a href="">Cokies</a>
+                      <div class=" mt-1">
+                        <button class="rounded-4 p-1 text-white fw-bold border-white border bg-dark">
+                            <i class="bi bi-globe2"></i>
+                            English</button>
+                    </div>
+                    </div>
+                  </div>
+                <section>
+
+
+                  </div>
+
+
+                  <!-- tools bar top header -->
+                  <div class="col respon col-md-12 col-lg position-fixed toolbar  d-flex justify-content-between rounded-top" style="width: 76%; height: 70px;">
+                    <div class="mt-3">
+                        <button class="bg-dark border-0 rounded-5" style="height: 28px;width: 28px;"><i class="bi bi-chevron-left text-white"></i></button>
+                        <button class="bg-dark border-0 rounded-5" style="height: 28px;width: 28px;"><i class="bi bi-chevron-right text-white"></i></button>
+                    </div>
+                        <div class="mt-2">
+                        <button class="btn btn-dark rounded-5  " style="width: 120px;height: 45px;">Sign up</button>
+                        <button class="btn btn-light  rounded-5 " style="width: 120px;height: 45px;">Log in</button>
+                        </div>
+                  </div>
+
+
+                  <!-- main -->
+                  <div class="col12 respon col-md main">
+                    <div class="mt-akbar">
+                      <div id="popular-artist" class=" rounded-bottom-4">
+                        <div class="fw-bold d-flex align-items-center justify-content-between pt-2">
+                            <p class="text-white fs-4">Popular Artist</p>
+                            <p class="gray">show all</p>
+                        </div>
+                        <!-- Circle Boxes  -->
+                        <div class="row    justify-content-between">
+                            <!-- BOX Artist  -->
+                            <div id="box-artist" class="col col-sm col-md col-lg col-xl  rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 50%;"
+                                    src="../images/1/dariush.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">Dariush eghbali</span>
+                                    <span class="gray fs-8">Artist</span>
+                                </div>
+                            </div>
+
+                            <div id="box-artist" class="d-none d-sm-block col-sm col-md col-lg col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 50%;"
+                                    src="../images/1/fereydon froghi.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">Fereydon froghi</span>
+                                    <span class="gray fs-8">Artist</span>
+                                </div>
+                            </div>
+
+                            <div id="box-artist" class="d-none d-md-block col-md col-lg col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 50%;"
+                                    src="../images/1/hayede.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">Anoushiravan hayede</span>
+                                    <span class="gray fs-8">Artist</span>
+                                </div>
+                            </div>
+                            <div id="box-artist" class="d-none d-lg-block col-md col-lg col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 50%;"
+                                    src="../images/1/kourosh yaghmai.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">Kourosh yaghmai</span>
+                                    <span class="gray fs-8">Artist</span>
+                                </div>
+                            </div>
+                            <div id="box-artist" class="d-none  d-xl-block col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 50%;"
+                                    src="../images/1/leila frouhar.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">Leila frouhar</span>
+                                    <span class="gray fs-8">Artist</span>
+                                </div>
+                            </div>
+                            <div id="box-artist" class="d-none  d-xxl-block col-xxl  rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 50%;"
+                                    src="../images/1/moein.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">Moein</span>
+                                    <span class="gray fs-8">Artist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Popular Albums  -->
+                    <div id="popular-artist" class=" rounded-bottom-4 mt-5">
+
+                        <div class="fw-bold d-flex align-items-center justify-content-between pt-2">
+                            <p class="text-white fs-4">Popular albums</p>
+                            <p class="gray">show all</p>
+                        </div>
+                        <!--Boxes  -->
+                        <div class="row    justify-content-between">
+                            <!-- BOX Artist  -->
+                            <div id="box-artist" class="col col-sm col-md col-lg col-xl  rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/2/EBI.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">koh yakh</span>
+                                    <span class="gray fs-8">Ebi</span>
+                                </div>
+                            </div>
+
+                            <div id="box-artist" class="d-none d-sm-block col-sm col-md col-lg col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/2/gogosh..jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">pol</span>
+                                    <span class="gray fs-8">gogosh</span>
+                                </div>
+                            </div>
+
+                            <div id="box-artist" class="d-none d-md-block col-md col-lg col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/2/gogosh.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">fasle taze</span>
+                                    <span class="gray fs-8">gogosh</span>
+                                </div>
+                            </div>
+                            <div id="box-artist" class="d-none d-lg-block col-md col-lg col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/2/hassan shamaezadeh.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">khoda hafez</span>
+                                    <span class="gray fs-8">hassan shamaezadeh</span>
+                                </div>
+                            </div>
+                            <div id="box-artist" class="d-none  d-xl-block col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/2/homeira.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">darya kenar</span>
+                                    <span class="gray fs-8">homeira</span>
+                                </div>
+                            </div>
+                            <div id="box-artist" class="d-none  d-xxl-block col-xxl  rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/2/moein.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">tavalod eshgh</span>
+                                    <span class="gray fs-8">Moein</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Popular radio  -->
+                    <div id="popular-artist" class=" rounded-bottom-4 mt-5">
+
+                        <div class="fw-bold d-flex align-items-center justify-content-between pt-2">
+                            <p class="text-white fs-4">Popular radio</p>
+                            <p class="gray">show all</p>
+                        </div>
+                        <!--Boxes  -->
+                        <div class="row    justify-content-between">
+                            <!-- BOX Artist  -->
+                            <div id="box-artist" class="col col-sm col-md col-lg col-xl  rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/3/faramarz aslani.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">age ye rooz</span>
+                                    <span class="gray fs-8">faramarz aslani</span>
+                                </div>
+                            </div>
+
+                            <div id="box-artist" class="d-none d-sm-block col-sm col-md col-lg col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/3/hayede.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">Best of hayede</span>
+                                    <span class="gray fs-8">hayede</span>
+                                </div>
+                            </div>
+
+                            <div id="box-artist" class="d-none d-md-block col-md col-lg col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/3/kourosh yafgmaei.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">malek jamshid</span>
+                                    <span class="gray fs-8">Kourosh yafgmaei</span>
+                                </div>
+                            </div>
+                            <div id="box-artist" class="d-none d-lg-block col-md col-lg col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/3/moein.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">parvaz</span>
+                                    <span class="gray fs-8">moein</span>
+                                </div>
+                            </div>
+                            <div id="box-artist" class="d-none  d-xl-block col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/3/shahram shabpare.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">rythm of night</span>
+                                    <span class="gray fs-8">shahram shabpare</span>
+                                </div>
+                            </div>
+                            <div id="box-artist" class="d-none  d-xxl-block col-xxl  rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/3/VIGEN.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">zan diroz amrooz </span>
+                                    <span class="gray fs-8">VIGEN</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Featured Charts  -->
+                    <div id="popular-artist" class=" rounded-bottom-4 mt-5">
+
+                        <div class="fw-bold d-flex align-items-center justify-content-between pt-2">
+                            <p class="text-white fs-4">Featured Charts</p>
+                            <p class="gray">show all</p>
+                        </div>
+                        <!--Boxes  -->
+                        <div class="row    justify-content-between">
+                            <!-- BOX Artist  -->
+                            <div id="box-artist" class="col col-sm col-md col-lg col-xl  rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/4/hayedeh.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">ayane</span>
+                                    <span class="gray fs-8">hayedeh</span>
+                                </div>
+                            </div>
+
+                            <div id="box-artist" class="d-none d-sm-block col-sm col-md col-lg col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/4/homayra.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">antezar</span>
+                                    <span class="gray fs-8">homayra</span>
+                                </div>
+                            </div>
+
+                            <div id="box-artist" class="d-none d-md-block col-md col-lg col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/4/mansour..jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">mast negatam</span>
+                                    <span class="gray fs-8">mansour</span>
+                                </div>
+                            </div>
+                            <div id="box-artist" class="d-none d-lg-block col-md col-lg col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/4/mansour.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">beautifull</span>
+                                    <span class="gray fs-8">mansour</span>
+                                </div>
+                            </div>
+                            <div id="box-artist" class="d-none  d-xl-block col-xl rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/4/satar.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">takkhal shenasname</span>
+                                    <span class="gray fs-8">satar</span>
+                                </div>
+                            </div>
+                            <div id="box-artist" class="d-none  d-xxl-block col-xxl  rounded-3 ">
+                                <img class="circle img-fluid mt-2 mb-2" style="width: 180px; border-radius: 10px;"
+                                    src="../images/4/siavash ghomeishi.jpg" alt="">
+
+                                <ul class="xy">
+                                    <i class="bi bi-play-circle-fill d-flex justify-content-end fs-1 mt-- "></i>
+
+                                </ul>
+
+                                <div class="d-flex flex-column">
+                                    <span class="text-white ">taghdim</span>
+                                    <span class="gray fs-8">siavash ghomeishi</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+                  </div>
+</section>
+        </div>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html> 

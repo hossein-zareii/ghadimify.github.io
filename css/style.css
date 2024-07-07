@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'a';
+    src: url('../fonts/CircularFontFamily/AvenirLTStd-Light.otf') format('ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style-type: none !important;
+    outline: none;
+    transition: all 0.1s ease-in;
+    font-family: a;
+}
+.scroll{
+    overflow-y: scroll;
+}
+.gray {
+    color: #a7a7a7 !important;
+}
+
+.gray:hover {
+    color: white !important;
+}
+.library{
+    height: 40px;
+}
+.bg-left{
+    background: #121212;
+}
+.ali div a{
+    color:#85a6a6;
+    font-size: smaller;
+}
+.scroll{
+    height: 250px;
+    position: relative;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    position: absolute;
+  }
+::-webkit-scrollbar-track {
+    background: #121212;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+.toolbar{
+    right: 12px;
+    background: #0f0f0f;
+}
+.akbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 379px;
+    height: 100%;
+    overflow-y: auto;
+}
+.main{
+    margin-left: 350px;
+    margin-top: 2px;
+    margin-right: 12px;
+    background: #121212;
+}
+
+#main {
+    background: rgb(18, 18, 18);
+    background: linear-gradient(0deg, rgba(18, 18, 18, 1) 47%, rgb(35, 35, 35) 100%);
+}
+
+#box-artist:hover {
+    background-color: rgb(40, 40, 40) !important;
+
+}
+
+
+
+.xy {
+    display: none;
+    color: #5cff59;
+}
+
+
+#box-artist .xy {
+    transition: all 1s ease-in-out;
+}
+
+#box-artist:hover .xy {
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 75px;
+}
+#menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 379px;
+    height: 100%;
+    overflow-y: auto;
+
+}
+/* #meow {
+    position: absolute;
+    left: 379px;
+    width: 1140px !important;
+} */
+.mt-akbar{
+    margin-top: 100px!important;
+}
+@media(min-width:0px) and (max-width:768px) {
+    .respon{
+        margin-left: 0px!important;
+        width: 100%!important;
+    }
+}
